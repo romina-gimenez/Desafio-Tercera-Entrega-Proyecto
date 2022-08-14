@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*paleta de colores*/
+/*estilo de fuentes*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E9DCBE;
+}
+
+header {
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #E9DCBE;
+}
+header .logo-mate {
+  width: 100px;
+  height: 100px;
+}
+header .navbar {
+  list-style: none;
+  display: inline-block;
+  color: rgb(8, 8, 8);
+  font-size: 1rem;
+}
+
+section h1 {
+  font-family: Cambria;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+  animation-duration: 3.5s;
+  animation-name: aparecer;
+  /********ANIMACIÓN INDEX********/
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section .banner-inicio {
+  width: 97%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+section .card-body {
+  background-color: #6D9886;
+  width: 100%;
+  margin-left: 10px;
+}
+section .card-body .btn {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+}
+.whatsapp img {
+  width: 50px;
+  height: 50px;
+}
+
+/*EXTENDS*/
+.boton, .boton__cancelar, .boton__enviar, .boton_verMas, section .card-body .btn {
+  width: 150px;
+  height: 30px;
+  background-color: #6D9886;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+
+.boton_verMas {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.boton_verMas {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*footer*/
+footer {
+  background-color: #D9CAB3;
+  margin-top: 10%;
+}
+footer p {
+  text-decoration: none;
+  color: black;
+  font-family: Cambria;
+}
+footer .lista-cierre {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+footer .lista-cierre a {
+  text-decoration: none;
+  color: black;
+}
+footer .lista-cierre a img {
+  width: 20px;
+}
+
+/*Dispositivos*/
+@media screen and (max-width: 768px) {
+  h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+/*paleta de colores*/
+/*estilo de fuentes*/
+.formulario h1 {
+  font-family: Cambria;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.formulario .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 450px;
+  background-color: #6D9886;
+  justify-content: center;
+  margin-top: 15px;
+}
+.formulario .box .datos {
+  margin: 5px;
+}
+.formulario .box .novedades {
+  margin-top: 20px;
+}
+
+section .maps {
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+}
+section .maps-text {
+  font-family: Cambria;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/*footer*/
+footer .card__img {
+  width: 15px;
+}
+
+form {
+  margin-top: 150px;
+}
+
+h2 {
+  color: black;
+  font-family: Cambria;
+}
+
+.formulario {
+  margin-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.maps {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
+/*EXTENDS*/
+.boton, .boton__cancelar, .boton__enviar, section .card-body .btn, .boton_verMas {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+
+.boton__enviar {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.boton__cancelar {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*MIXIN*/
+.box {
+  height: 250px;
+  width: 360px;
+}
+
+/*MAP*/
+/*EACH+MAP*/
+.btn--facebook {
+  background-color: black;
+}
+
+.btn--instagram {
+  background-color: #899878;
+}
+
+.btn--e-mail {
+  background-color: #899878;
+}
+
+/*paleta de colores*/
+/*estilo de fuentes*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E9DCBE;
+}
+
+header .navbar {
+  list-style: none;
+  display: inline-block;
+  color: rgb(8, 8, 8);
+  font-size: 1rem;
+}
+
+section .accordion {
+  margin-top: 100px;
+}
+section .accordion .accordion-item {
+  text-decoration: none;
+  color: black;
+  font-family: Cambria;
+}
+
+/*paleta de colores*/
+/*estilo de fuentes*/
+
+/*# sourceMappingURL=styles.css.map */

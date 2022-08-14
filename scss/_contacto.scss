@@ -1,0 +1,116 @@
+@import "variables";
+
+.formulario{
+
+    h1{
+        font-family: $fuente-principal;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        height: 450px;
+        background-color: #6D9886;
+        justify-content: center;
+        margin-top: 15px;
+
+        .datos{
+            margin: 5px;
+        }
+
+        .novedades{
+            margin-top: 20px;
+        }
+    }
+
+}
+section {
+    .maps{
+        display:flex;
+        flex-direction: column;
+        gap: 20%;
+    }
+    .maps-text { 
+        font-family: $fuente-principal;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/*footer*/
+footer{
+        .card__img{
+            width: 15px;
+        }
+}
+
+form{
+    margin-top: 150px;
+
+}
+
+h2{
+    color: $color-titulos;
+    font-family: $fuente-principal;
+ 
+}
+
+.formulario{
+    margin-left: 20px;
+    font-family: $fuente-general;
+}
+.maps{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+/*EXTENDS*/
+.boton {
+	width:150px;
+	height:30px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:.5px solid black;
+}
+
+.boton__enviar{
+	@extend .boton;
+	background-color:#E4E6C3;
+	color:black;
+    font-family: $fuente-general;
+}
+
+.boton__cancelar{
+	@extend .boton;
+	background-color:#E4E6C3;
+	color:black;
+    font-family: $fuente-general;
+}
+
+/*MIXIN*/
+@mixin medida($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include medida(360px, 250px);
+ }
+
+ /*MAP*/
+ $redSocial: ( 
+ facebook: black,
+ instagram:  #899878,
+ e-mail: #899878,
+); 
+
+/*EACH+MAP*/
+@each $red, $color in $redSocial {
+.btn--#{$red} {
+background-color: $color;
+}
+}
