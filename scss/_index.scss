@@ -54,9 +54,9 @@ section {
         margin-bottom: 20px;
     }
     .card-body{
-        background-color: #6D9886;
+        background-color: $color-cards;
         width: 100%;
-        margin-left: 10px;
+       
         .btn{
             @extend .boton;
             background-color:#E4E6C3;
