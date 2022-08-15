@@ -29,11 +29,6 @@
 
 }
 section {
-    .maps{
-        display:flex;
-        flex-direction: column;
-        gap: 20%;
-    }
     .maps-text { 
         font-family: $fuente-principal;
         font-size: 2.5rem;
