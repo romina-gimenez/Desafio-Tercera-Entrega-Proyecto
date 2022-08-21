@@ -6,6 +6,7 @@
  }
 
 section {
+    
     h1{
         .titulo-producto{
             font-family: $fuente-principal;
@@ -28,4 +29,18 @@ section {
 }
 .card-text1{
     text-align: center;
+}
+
+/*Dispositivos*/
+@media screen and (max-width: 768px){
+    .producto1{
+        padding-left: 25%;
+    }
+    .titulo-producto{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5rem;
+        font-weight:bolder;
+        font-style:italic;
+        text-align: center;
+    }
 }
