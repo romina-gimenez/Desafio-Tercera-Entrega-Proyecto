@@ -136,28 +136,46 @@ footer .lista-cierre a img {
 }
 /*paleta de colores*/
 /*estilo de fuentes*/
-.formulario h1 {
+.text-formulario {
   font-family: Cambria;
   font-size: 2.5rem;
+  font-weight: bolder;
   text-align: center;
+  margin-top: 95px;
+  margin-bottom: auto;
+}
+
+.formulario {
+  margin-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .formulario .box {
-  width: 300px;
+  margin: auto;
+  width: 400px;
   height: 350px;
   background-color: #6D9886;
+  text-align: center;
+  margin-top: 50px;
 }
 .formulario .box .datos {
-  margin: 5px;
+  margin: 15px;
 }
 .formulario .box .novedades {
   margin-top: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-section .maps-text {
+section h2 {
+  color: black;
   font-family: Cambria;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
+  margin-top: 50px;
+}
+section .maps {
+  padding: 25px;
+  width: 400px;
+  height: 450px;
 }
 
 /*footer*/
@@ -165,25 +183,30 @@ footer .card__img {
   width: 15px;
 }
 
-form {
-  margin-top: 150px;
+/*Dispositivos*/
+@media screen and (max-width: 768px) {
+  h1 .text-formulario {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 0.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+  }
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 0.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .maps {
+    padding: auto;
+    height: 300px;
+    width: 350px;
+  }
 }
-
-h2 {
-  color: black;
-  font-family: Cambria;
-}
-
-.formulario {
-  margin-left: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.maps {
-  margin-top: 90px;
-  margin-left: 20px;
-}
-
 /*EXTENDS*/
 .boton, .boton__cancelar, .boton__enviar, section .card-body .btn, .boton_verMas {
   width: 150px;
@@ -193,6 +216,7 @@ h2 {
   color: black;
   border-radius: 20px;
   border: 0.5px solid black;
+  padding-left: 0%;
 }
 
 .boton__enviar {
